@@ -1,0 +1,7 @@
+Personal Access Token:
+89fda9bd33ade9cf9a882f51ec84c5031e6aeb63
+
+Gist Id:
+49dbb451a6bb73e3ddf37d26a5127ee4
+
+npm install -g eslint babel-eslint eslint-config-airbnb eslint eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react eslint-plugin-html

@@ -1,0 +1,57 @@
+{
+	"appid":"wxc0bff982d97aa33f",
+	"mch_id":"1452736602",
+	"device_info": "",
+	"nonce_str": "123",
+	"sign_type": "MD5",
+	"body": "有蛋网-商品购买",
+	"detail": "爱马仕",
+	"out_trade_no": "order_6HPHDfgU",
+	"fee_type": "CNY",
+	"total_fee": 1,
+	"spbill_create_ip": "35.162.111.242",
+	"time_start": "",
+	"time_expire": "",
+	"goods_tag": "",
+	"notify_url": "https://youyifou.com/wxcb",
+	"trade_type": "JSAPI",
+	"openid": "oLkEK0ZTsS8wIDrnNUWT443F8EzY"
+}
+
+<xml>
+	<appid>wxc0bff982d97aa33f</appid>
+	<mch_id>1452736602</mch_id>
+	<device_info></device_info>
+	<nonce_str>123</nonce_str>
+	<sign>1C2640DF546DC7B4A93D35C93ADC2B03</sign>
+	<sign_type>MD5</sign_type>
+	<body>有蛋网-商品购买</body>
+	<detail>爱马仕</detail>
+	<out_trade_no>order_6HPHDfgU</out_trade_no>
+	<fee_type>CNY</fee_type>
+	<total_fee>1</total_fee>
+	<spbill_create_ip>35.162.111.242</spbill_create_ip>
+	<time_start></time_start>
+	<time_expire></time_expire>
+	<goods_tag></goods_tag>
+	<notify_url>https://youyifou.com/wxcb</notify_url>
+	<trade_type>JSAPI</trade_type>
+	<openid>oLkEK0ZTsS8wIDrnNUWT443F8EzY</openid>
+</xml>
+
+<xml>
+	<appid>wxc0bff982d97aa33f</appid>
+	<body>有蛋网-商品购买</body>
+	<detail>爱马仕</detail>
+	<fee_type>CNY</fee_type>
+	<mch_id>1452736602</mch_id>
+	<nonce_str>123</nonce_str>
+	<notify_url>https://youyifou.com/wxcb</notify_url>
+	<openid>oLkEK0ZTsS8wIDrnNUWT443F8EzY</openid>
+	<out_trade_no>order_6HPHDfgU</out_trade_no>
+	<sign_type>MD5</sign_type>
+	<spbill_create_ip>35.162.111.242</spbill_create_ip>
+	<total_fee>1</total_fee>
+	<trade_type>JSAPI</trade_type>
+	<sign>1C2640DF546DC7B4A93D35C93ADC2B03</sign>
+</xml>

@@ -1,0 +1,28 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  },
+  "globals": {
+    "wx": true,
+    "getCurrentPages": true,
+    "getApp": true,
+    "Page": true,
+    "App": true,
+    "document": true,
+  },
+  "plugins": [
+      "html"
+  ],
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "rules": {
+    "no-unused-vars": ["error", { "varsIgnorePattern": "Ignored", "args": "none" }],
+    "no-console": "off",
+    "no-bitwise": ["error", { "int32Hint": true }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+  },
+}

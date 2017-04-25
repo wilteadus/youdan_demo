@@ -1,27 +1,33 @@
-# FebJS [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> 
+![](http://i.imgur.com/DUiL9yn.png)
 
-## Installation
+# React/Sass/Redux Boilerplate
 
-```sh
-$ npm install --save FebJS
+Boilerplate and guide for a React/Sass/Redux build.
+
+## Getting Started
+
+To get started, first install all the necessary dependencies.
+```
+> npm install
 ```
 
-## Usage
-
-```js
-var febJs = require('FebJS');
-
-febJs('Rainbow');
+Run an initial webpack build
 ```
-## License
+> webpack
+```
 
- © [FebJS]()
+Start the development server (changes will now update live in browser)
+```
+> npm run start
+```
 
+To view your project, go to: [http://localhost:3000/](http://localhost:3000/)
 
-[npm-image]: https://badge.fury.io/js/FebJS.svg
-[npm-url]: https://npmjs.org/package/FebJS
-[travis-image]: https://travis-ci.org//FebJS.svg?branch=master
-[travis-url]: https://travis-ci.org//FebJS
-[daviddm-image]: https://david-dm.org//FebJS.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org//FebJS
+## Links
+
+- [Donate](https://www.patreon.com/thenewboston)
+- [thenewboston.com](https://thenewboston.com/)
+- [Facebook](https://www.facebook.com/TheNewBoston-464114846956315/)
+- [Twitter](https://twitter.com/bucky_roberts)
+- [Google+](https://plus.google.com/+BuckyRoberts)
+- [reddit](https://www.reddit.com/r/thenewboston/)

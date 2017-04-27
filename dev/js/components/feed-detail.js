@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-/*
- * We need "if(!this.props.user)" because we set state to null by default
- * */
-
-class UserDetail extends React.PureComponent {
+class FeedDetail extends Component {
   render() {
     if (!this.props.user) {
       return (<div>Select a user...</div>);
@@ -21,7 +17,7 @@ class UserDetail extends React.PureComponent {
   }
 }
 
-UserDetail.propTypes = {
+FeedDetail.propTypes = {
   user: React.PropTypes.string.isRequired,
 
 };
@@ -33,4 +29,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default UserDetail;
+export default connect(mapStateToProps)(FeedDetail);

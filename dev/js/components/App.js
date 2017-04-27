@@ -14,7 +14,9 @@ require('../../scss/style.scss');
 const App = () => (
   <div>
     <NavBar />
-    <FeedList />
+    <div className="container">
+      <FeedList />
+    </div>
   </div>
 );
 

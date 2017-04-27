@@ -34,7 +34,7 @@ class Feed extends Component {
 
     return (
       <div style={styles.feed}>
-        <img src={topicUrl} />
+        <img className="img-responsive" src={topicUrl} />
         {this.props.id}
         {this.props.title}
         {fromNow}

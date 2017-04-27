@@ -8,10 +8,10 @@ class FeedList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      feeds: [],
       total: 11,
       current: 7,
       visiblePage: 5,
+      feeds: [],
     };
   }
 
@@ -27,7 +27,6 @@ class FeedList extends Component {
       },
     }).then(response => response.json())
     .then((data) => {
-      // console.log(data);
       this.setState({ feeds: data.nTen });
     });
   }

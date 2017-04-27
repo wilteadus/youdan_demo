@@ -23,6 +23,7 @@
     "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-dom": "^15.1.0",
+    "react-pager": "^1.2.1",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
     "redux-logger": "^2.6.1",
@@ -33,7 +34,8 @@
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^1.14.1",
-    "webpack-hot-middleware": "^2.11.0"
+    "webpack-hot-middleware": "^2.11.0",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "babel-plugin-react-transform": "^2.0.2",

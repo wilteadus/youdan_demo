@@ -27,39 +27,24 @@ const styles = {
 };
 
 class Feed extends Component {
+
   render() {
-    const _fromNow = moment(this.props.created_at).fromNow();
+    const fromNow = moment.unix(this.props.postTime).fromNow();
+    const topicUrl = `https://youdan.co/public/topics/${this.props.id}.png`;
 
     return (
       <div style={styles.feed}>
-        <div
-          title={this.props.username}
-          titleStyle={styles.name}
-          subtitle={_fromNow}
-          avatar={this.props.profile_image_url}
-        />
-
-        <hr />
-
-        <text>
-          {this.props.text}
-        </text>
-
-        <hr />
-
-        <div style={styles.bottomContainer}>
-          <button
-            label="Link"
-            style={styles.bottomButton}
-          />
-          <button
-            label="Like"
-            style={styles.bottomButton}
-          />
-        </div>
+        <img src={topicUrl} />
+        {this.props.id}
+        {this.props.title}
+        {fromNow}
       </div>
     );
   }
 }
+
+Feed.propTypes = {
+
+};
 
 export default Feed;

@@ -1,23 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 import NavBar from '../components/navbar';
-import UserList from '../containers/user-list';
-import UserDetails from '../containers/user-detail';
 import FeedList from '../containers/feed-list';
-require('../../scss/style.scss');
 
-// <h2>User List</h2>
-// <UserList />
-// <hr />
-// <h2>User Details</h2>
-// <UserDetails />
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      moreData: true,
+    };
+  }
 
-const App = () => (
-  <div>
-    <NavBar />
-    <div className="container">
-      <FeedList />
-    </div>
-  </div>
-);
+  render() {
+    if (this.state.moreData) {
+      var loadMoreView =
+        (<div className="more-btn">
+          <text className="more-text">查看更多</text>
+        </div>);
+    } else {
+      var loadMoreView = <div className="no-more-btn">没有更多拉!</div>;
+    }
+    return (
+      <div>
+        <NavBar />
+        <div className="container">
+          <FeedList />
+          { loadMoreView }
+        </div>
+      </div>
+    );
+  }
+}
+
 
 export default App;

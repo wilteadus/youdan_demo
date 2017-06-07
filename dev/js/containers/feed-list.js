@@ -49,11 +49,19 @@ class FeedList extends Component {
         id={feed.id}
         postTime={feed.postTime}
         title={feed.title}
+        valid={feed.valid}
+        statement={feed.statement}
+        currPrice={feed.currPrice}
+        prevPrice={feed.prevPrice}
       />
     ));
     return (
       <div style={styles}>
-        {FeedNodes}
+        <div className='hot-container'>
+          <div className='hot-card'>
+            {FeedNodes}
+          </div>
+        </div>
         <Pager
           total={this.state.total}
           current={this.state.current}

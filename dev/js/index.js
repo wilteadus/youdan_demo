@@ -7,13 +7,15 @@ import thunk from 'redux-thunk';
 import promise from 'redux-promise';
 import createLogger from 'redux-logger';
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Route,
   hashHistory,
 } from 'react-router-dom';
 import allReducers from './reducers';
 import App from './components/app';
-import UserDetail from './containers/user-detail';
+import FeedDetail from './components/feed-detail';
+require('../css/reset.css');
+require('../css/index.css');
 
 const logger = createLogger();
 const store = createStore(
@@ -23,12 +25,12 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router history={hashHistory}>
+    <HashRouter history={hashHistory}>
       <div>
         <Route exact path="/" component={App} />
-        <Route path="/123" component={UserDetail} />
+        <Route path="/detail/:id" component={FeedDetail} />
       </div>
-    </Router>
+    </HashRouter>
   </Provider>,
   document.getElementById('root'),
 );

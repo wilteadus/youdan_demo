@@ -1,32 +1,39 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { selectUser } from '../actions/index';
 
 class FeedDetail extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
-    if (!this.props.user) {
-      return (<div>Select a user...</div>);
-    }
     return (
-      <div>
-        <img src={this.props.user.thumbnail} />
-        <h2>{this.props.user.first} {this.props.user.last}</h2>
-        <h3>Age: {this.props.user.age}</h3>
-        <h3>Description: {this.props.user.description}</h3>
-      </div>
+      <div>{ this.props.match.params.id }</div>
     );
   }
 }
 
 FeedDetail.propTypes = {
-  user: React.PropTypes.string.isRequired,
 
 };
 
-// "state.activeUser" is set in reducers/index.js
+// Get apps state and pass it as props to UserList
+//      > whenever state changes, the UserList will automatically re-render
 function mapStateToProps(state) {
   return {
-    user: state.activeUser,
+
   };
 }
 
-export default connect(mapStateToProps)(FeedDetail);
+// Get actions and pass them as props to to UserList
+//      > now UserList has this.props.selectUser
+function matchDispatchToProps(dispatch) {
+  return bindActionCreators({ selectUser }, dispatch);
+}
+
+// We don't want to return the plain UserList (component)
+// anymore, we want to return the smart Container
+//      > UserList is now aware of state and actions
+export default connect(mapStateToProps, matchDispatchToProps)(FeedDetail);

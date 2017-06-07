@@ -20,6 +20,7 @@
     "moment": "^2.18.1",
     "node-libs-browser": "^1.0.0",
     "node-sass": "^3.8.0",
+    "prop-types": "^15.5.10",
     "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-dom": "^15.1.0",
@@ -42,6 +43,7 @@
   "devDependencies": {
     "babel-plugin-react-transform": "^2.0.2",
     "babel-preset-stage-0": "^6.5.0",
+    "eslint-config-airbnb-deps": "^10.0.2",
     "react-transform-hmr": "^1.0.4"
   }
 }

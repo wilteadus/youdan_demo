@@ -1,6 +1,6 @@
-# Profile
-Developed using AngularJS + ExpressJS + NodeJS
+# youdan_demo
+Developed using ReactJS + Redux
 1. Input <code>npm install -g webpack</code> to install webpack
 2. Input <code>npm install</code> to install all dependencies
-3. Input <code>npm run build</code> to compile and bundle files
-4. Input <code>npm run dev</code> to start server
+3. Input <code>npm start</code> to start server
+
